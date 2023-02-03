@@ -7,5 +7,5 @@ RUN apt-get -y install git
 COPY ./finger_print_esmc /usr/local/python/
 EXPOSE 5000
 WORKDIR /usr/local/python/
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt  
 CMD python best-finger-api.py
